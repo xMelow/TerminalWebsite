@@ -2,6 +2,8 @@
 
 import { help, whois, projects, socials, anime } from './commands.js';
 
+const $output = document.querySelector('#output');
+
 function init() {
     document.querySelector("#inputField").addEventListener('keydown', checkInput)
 }
@@ -36,21 +38,33 @@ function command(cmd) {
             showOutput(anime);
             break;
         case 'clear':
-            //Clear the terminal
+            clearTerminal();
             break;
         default:
-            //Error message
+            commandNotFound();
             break;
     }
 }
 
 function showOutput(content) {
-    const $output = document.querySelector('#output');
 
     for (let i = 0; i < content.length; i++) {
         const el = content[i];
         $output.innerHTML += `<div>${el}</div>`;
     }
+}
+
+function clearTerminal() {
+    $output.innerHTML = "";
+}
+
+function commandNotFound(){
+    $output.innerHTML += `
+        <br>
+        <div>Command not found</div>
+        <div>please try again</div>
+        <br>
+    `;
 }
 
 init();
