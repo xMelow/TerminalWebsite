@@ -1,6 +1,5 @@
 "use strict";
 
-
 export const help = [
     "<br></br>",
     "help           show the list of commands", 
@@ -14,12 +13,12 @@ export const help = [
 export const whois = [
     "<br></br>",
     "My name is Flor stellamans and I am 22 years old.",
-    "I grauated collage at Howest in Bruges with the diploma of Applied computer sciense",
+    "I grauated collage at Howest in Bruges with the diploma of Applied computer sciense.",
     "I spend most of my free time watching anime, working out, reading books and look at the crypto market.",
     "What I also like to do is take walks, meditate and writing code.",
 ];
 
-export const project = [
+export const projects = [
     "<br></br>",
     "Here is a list of all the projects I made",
     "- Motivation of the day",
