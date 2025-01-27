@@ -1,11 +1,12 @@
 "use strict";
 
-import { help, whois, projects, socials, anime } from './commands.js';
+import { help, whois, projects, socials, anime, banner } from './commands.js';
 
 const $output = document.querySelector('#output');
 
 function init() {
-    document.querySelector("#inputField").addEventListener('keydown', checkInput)
+    showbanner();
+    document.querySelector("#input").addEventListener('keydown', checkInput)
 }
 
 function checkInput(e) {
@@ -37,6 +38,9 @@ function command(cmd) {
         case 'anime':
             showOutput(anime);
             break;
+        case 'banner':
+            showbanner();
+            break;
         case 'clear':
             clearTerminal();
             break;
@@ -46,8 +50,13 @@ function command(cmd) {
     }
 }
 
-function showOutput(content) {
+function showbanner() {
+    const bannerHTML = banner.map(line => line).join("\n"); 
+    $output.innerHTML += `<pre>${bannerHTML}</pre>`;
+}
 
+
+function showOutput(content) {
     for (let i = 0; i < content.length; i++) {
         const el = content[i];
         $output.innerHTML += `<div>${el}</div>`;

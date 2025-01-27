@@ -2,12 +2,13 @@
 
 export const help = [
     "<br>",
-    "help &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show the list of commands", 
-    "whois  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who am I",
-    "projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my projects",
-    "socials &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show socials",
-    "anime &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show favorite animes",         
-    "clear &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal",
+    "<span>help</span &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show the list of commands", 
+    "<span>whois</span>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;who am I",
+    "<span>projects</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;my projects",
+    "<span>socials</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show socials",
+    "<span>anime</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show favorite animes",         
+    "<span>clear</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clear the terminal",
+    "<span>banner</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;show the banner",
     "<br>"
 ];
 
@@ -38,18 +39,21 @@ export const projects = [
 export const socials = [
     "<br>",
     "Linkedin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://www.linkedin.com/in/flor-stellamans-4b901a19a/'>Linkedin</a>",
-    "Instagram&nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>Instagram</a>",
+    "Instagram &nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>Instagram</a>",
     "<br>",
 ];
 
 export const anime = [
     "<br>",
     "My top 3 best anime are:",
+    "<br>",
     "1. One Piece",
     "&nbsp;&nbsp;&nbsp;&nbsp;I think this was very obvious and everyone who has watched One Piece will agree with me.",
+    "<br>",
     "2. Jujutsu Kaisen",
     "&nbsp;&nbsp;&nbsp;&nbsp;Why I liked JJK so much were the characters. I really like Itadori, Todo, and Nanami.",
     "&nbsp;&nbsp;&nbsp;&nbsp;The story was fast-paced and action-packed, so I was constantly on the edge of my seat while watching.",
+    "<br>",
     "3. Grand Blue",
     "&nbsp;&nbsp;&nbsp;&nbsp;This is one you probably haven't seen, but it is a must-watch.",
     "&nbsp;&nbsp;&nbsp;&nbsp;This is a hilarious comedy, and trust me, it's about diving ;).",
@@ -58,3 +62,26 @@ export const anime = [
     "<a href='https://anilist.co/user/fstellam/'>Anilist</a>",
     "<br>",
 ];
+
+export const banner = [
+    "<br>",
+    ".--------------------------------------------------------------------------.",
+    "|                                                                          |",
+    "|  _____ _              ____  _       _ _                                  |",
+    "| |  ___| | ___  _ __  / ___|| |_ ___| | | __ _ _ __ ___   __ _ _ __  ___  |",
+    "| | |_  | |/ _ \\| '__| \\___ \\| __/ _ \\ | |/ _` | '_ ` _ \\ / _` | '_ \\/ __| |",
+    "| |  _| | | (_) | |     ___) | ||  __/ | | (_| | | | | | | (_| | | | \\__ \\ |",
+    "| |_|   |_|\\___/|_|    |____/ \\__\\___|_|_|\\__,_|_| |_| |_|\\__,_|_| |_|___/ |",
+    "|                                                                          |",
+    ".--------------------------------------------------------------------------.",
+    "<br>",
+    "Type <span>'help'</span> to see the list of commands",
+];
+
+
+
+
+
+
+
+

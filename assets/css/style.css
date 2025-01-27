@@ -1,5 +1,41 @@
 body {
-    font-size: 2rem;
-    background-color: black;
-    color: rgb(30, 255, 0);
+    background-color: #121212;
+    color: rgb(35, 179, 17);
+}
+
+span {
+    color: white;
+}
+
+div {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+#input {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+textarea {
+    font-size: 1.5rem;
+    background-color: #121212;
+    color: white;
+    border: none;
+    outline: none;
+    resize: none;
+    margin-left: 0.25rem;
+}
+
+pre {
+    font-family: 'Courier New', Courier, Consolas, monospace;
+    line-height: 1.2; 
+    white-space: pre-wrap; 
+    color: #eee;
+    padding: 1rem;
+    margin: 0;
 }
