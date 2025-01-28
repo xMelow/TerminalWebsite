@@ -1,6 +1,7 @@
 body {
     background-color: #121212;
     color: rgb(35, 179, 17);
+    font-family: 'Courier New', Courier, Consolas, monospace;
 }
 
 span {
@@ -21,7 +22,14 @@ h2 {
     align-items: baseline;
 }
 
+a {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    color: blue;
+}
+
 textarea {
+    font-family: 'Courier New', Courier, Consolas, monospace;
     font-size: 1.5rem;
     background-color: #121212;
     color: white;

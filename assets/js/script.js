@@ -6,7 +6,7 @@ const $output = document.querySelector('#output');
 
 function init() {
     showbanner();
-    document.querySelector("#input").addEventListener('keydown', checkInput)
+    document.querySelector("#input").addEventListener('keydown', checkInput);
 }
 
 function checkInput(e) {
@@ -15,8 +15,13 @@ function checkInput(e) {
         const cmd = e.target.value.trim();
 
         if (cmd){
-            command(cmd);
+            const commandElement = document.createElement("div");
+            commandElement.innerHTML = `<h2>visitor@fs.terminal.com:~$ <span>${cmd}</span></h2>`;
+
+            $output.appendChild(commandElement);
+
             e.target.value = "";
+            command(cmd);
         }
     }
 }
@@ -24,7 +29,7 @@ function checkInput(e) {
 function command(cmd) {
     switch(cmd.toLowerCase()) {
         case 'help':
-            showOutput(help);
+            showOutput(help, 10);
             break;
         case 'whois':
             showOutput(whois, 5);

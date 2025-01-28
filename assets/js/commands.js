@@ -2,13 +2,14 @@
 
 export const help = [
     "<br>",
-    "help           show the list of commands", 
-    "whois          who am I",
-    "projects       my projects",
-    "socials        show socials",
-    "anime          show favorite animes",         
-    "clear          clear the terminal",
-    "banner         show the banner",
+    "<span>help</span>          show the list of commands", 
+    "<span>whois</span>          who am I",
+    "<span>projects</span>       my projects",
+    "<span>socials</span>        show socials",
+    "<span>anime</span>          show favorite animes",  
+    "<span>banner</span>         show the banner",       
+    "<span>clear</span>         clear the terminal",
+    "<br>"
 ];
 
 export const whois = [
@@ -17,26 +18,33 @@ export const whois = [
     "I graduated college at Howest in Bruges with a diploma in Applied Computer Science.",
     "I spend most of my free time watching anime, working out, reading books, and looking at the crypto market.",
     "What I also like to do is take walks, meditate, and write code.",
+    "<br>"
 ];
 
 export const projects = [
     "<br>",
     "Here is a list of all the projects I made:",
+    "<br>",
     "- Motivation of the day",
     "This is a browser extension that shows a quote and a video of motivation.",
+    "<br>",
     "- Rename script",
     "This script lets you rename Stremio downloads.",
+    "<br>",
     "- Terminal website",
     "This is the website you are looking at :)",
     "<br>",
     "You can always look at my GitHub if you like:",
+    "<br>",
     "<a href='https://github.com/xMelow'>GitHub</a>",
+    "<br>"
 ];
 
 export const socials = [
     "<br>",
-    "Linkedin<a href='https://www.linkedin.com/in/flor-stellamans-4b901a19a/'>Linkedin</a>",
+    "Linkedin <a href='https://www.linkedin.com/in/flor-stellamans-4b901a19a/'>Linkedin</a>",
     "Instagram <a href='#'>Instagram</a>",
+    "<br>"
 ];
 
 export const anime = [
@@ -55,7 +63,9 @@ export const anime = [
     "This is a hilarious comedy, and trust me, it's about diving ;).",
     "<br>",
     "If you are interested in my entire list, you can check it out on Anilist:",
+    "<br>",
     "<a href='https://anilist.co/user/fstellam/'>Anilist</a>",
+    "<br>"
 ];
 
 export const banner = [
@@ -70,7 +80,7 @@ export const banner = [
     "|                                                                          |",
     ".--------------------------------------------------------------------------.",
     "<br>",
-    "Type 'help' to see the list of commands",
+    "Type <span>'help'</span> to see the list of commands",
 ];
 
 
