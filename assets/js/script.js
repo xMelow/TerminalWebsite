@@ -27,16 +27,16 @@ function command(cmd) {
             showOutput(help);
             break;
         case 'whois':
-            showOutput(whois);
+            showOutput(whois, 5);
             break;
         case 'projects':
-            showOutput(projects);
+            showOutput(projects, 10);
             break;
         case 'socials':
-            showOutput(socials);
+            showOutput(socials, 10);
             break;
         case 'anime':
-            showOutput(anime);
+            showOutput(anime, 7);
             break;
         case 'banner':
             showbanner();
@@ -55,12 +55,37 @@ function showbanner() {
     $output.innerHTML += `<pre>${bannerHTML}</pre>`;
 }
 
+function showOutput(content, speed) {
+    let i = 0;
 
-function showOutput(content) {
-    for (let i = 0; i < content.length; i++) {
-        const el = content[i];
-        $output.innerHTML += `<div>${el}</div>`;
+    function nextLine() {
+        if (i < content.length) {
+            typeText(content[i], () => {
+                i++;
+                nextLine();
+            }, speed);
+        }
     }
+    nextLine();
+}
+
+function typeText(txt, callback, speed = 15) {
+    let i = 0;
+    let result = "";
+    const div = document.createElement("div");
+    $output.appendChild(div);
+
+    function typeChar() {
+        if (i < txt.length) {
+            result += txt.charAt(i);
+            i++;
+            setTimeout(typeChar, speed);
+        } else if (callback) {
+            callback();
+            $output.innerHTML += `<div>${result}</div>`;
+        }
+    }
+    typeChar();
 }
 
 function clearTerminal() {
